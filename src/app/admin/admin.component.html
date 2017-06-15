@@ -12,7 +12,7 @@
       <div>
         <label>Description of Project:</label>
         <br>
-        <input #newDescription>
+        <textarea #newDescription></textarea>
       </div>
 
       <div>
@@ -22,7 +22,7 @@
       </div>
 
       <div>
-        <label>Album Description:</label>
+        <label>Funding Goal:</label>
         <br>
         <textarea #newGoal></textarea>
       </div>
@@ -38,6 +38,7 @@
         <br>
         <textarea #newRewards></textarea>
       </div>
-      <button (click) = "submitForm(newName.value, newDescription.value, newStarters.value, newGoal.value, newPlans.value, newRewards.value); newName.value=''; newDescription.value=''; newStarters.value =''; newGoal.value =''; newPlans.value =''; newRewards.value=''"></button>
+      <br>
+      <button class="btn btn-success" (click) = "submitForm(newName.value, newDescription.value, newStarters.value, newGoal.value, newPlans.value, newRewards.value); newName.value=''; newDescription.value=''; newStarters.value =''; newGoal.value =''; newPlans.value =''; newRewards.value=''">Add your project</button>
     </div>
 </div>

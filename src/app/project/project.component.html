@@ -1,3 +1,7 @@
-<p>
-  projects works!
-</p>
+<h2>View Projects</h2>
+<hr>
+<div *ngFor="let project of projects | async"  (click)="goToDetailPage(project)" class="panel panel-default">
+  <div class="panel-body">
+    <h4><em>{{project.name}}</em>, <em>{{project.amountRaised}}</em></h4>
+  </div>
+</div>
